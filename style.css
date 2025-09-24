@@ -2,41 +2,61 @@
     width: 300px;
     margin: 100px auto;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #f2f2f2;
 }
 
 .display {
-    background-color: #f9f9f9;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .display input {
     width: 100%;
     border: none;
     outline: none;
-    font-size: 24px;
+    font-size: 28px;
     text-align: right;
+    color: #333;
 }
 
 .keys {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 5px;
+    grid-gap: 10px;
 }
 
 .keys button {
-    padding: 15px;
-    font-size: 18px;
+    padding: 20px;
+    font-size: 20px;
     border: none;
-    border-radius: 5px;
-    background-color: #eee;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: white;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .keys button:hover {
-    background-color: #ddd;
+    background-color: #45a049;
+}
+
+.keys button.operator {
+    background-color: #f44336;
+}
+
+.keys button.operator:hover {
+    background-color: #d32f2f;
+}
+
+.keys button.equals {
+    background-color: #2196F3;
+}
+
+.keys button.equals:hover {
+    background-color: #1976D2;
 }
